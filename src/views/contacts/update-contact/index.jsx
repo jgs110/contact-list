@@ -106,7 +106,7 @@ const UpdateContact = () => {
               }}
               aria-label={`Cancel Update Contact for ${selectedContact.firstName} ${selectedContact.lastName}`}
             >
-              <Link to="contacts" role="button" tabIndex="-1">
+              <Link to="/contacts" role="button" tabIndex="-1">
                 Cancel
               </Link>
             </button>
