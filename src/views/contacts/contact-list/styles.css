@@ -95,7 +95,7 @@ header {
   }
 }
 
-/* Medium and Large devices (tablets, 768px and up) */
+/* Small, Medium and Large devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .wrapper {
     margin: 0 auto;
