@@ -1,0 +1,102 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid black;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1em;
+  max-width: 70%;
+}
+
+.card:hover {
+  background: rgb(215, 215, 215);
+  box-shadow: 0 8px 8px -4px rgb(131, 150, 171);
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 2rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.header-content {
+  display: flex;
+  gap: 0.5em;
+}
+
+.collapse-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
+.collapse-content.collapsed {
+  display: none;
+}
+
+.collapsed-content.expanded {
+  display: block;
+}
+
+.contact-details {
+  gap: 0.1em;
+}
+
+.content {
+  display: inherit;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.actions button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  font-size: 1.3em;
+}
+
+.actions a {
+  color: black;
+  font-size: 1.3em;
+}
+
+.actions button:hover {
+  color: rgba(91, 91, 91, 0.479);
+}
+
+.actions a:hover {
+  color: rgba(91, 91, 91, 0.479);
+}
+
+.details-actions {
+  margin-left: 1.7em;
+}
+
+/* Small devices (portrait phones, 375px and up) */
+@media (min-width: 375px) {
+  .card {
+    flex-direction: column;
+  }
+  /* Small devices (landscape phones, 564px and up) */
+  @media (min-width: 564px) {
+    .card {
+      flex-direction: row;
+    }
+  }
+}

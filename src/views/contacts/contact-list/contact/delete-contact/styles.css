@@ -1,0 +1,60 @@
+.dialog-container {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Overlay effect: translucent background: black w/ partial opacity */
+  z-index: 1; /* Overlay effect: positioned over other containers */
+  width: 100%;
+  height: 100%;
+  position: fixed; /* Fix position on the top-left corner*/
+  top: 0;
+  left: 0;
+  padding-top: 20rem; /* Location of the content container */
+}
+
+.dialog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: 32rem; /* Max width where it stops expanding */
+  height: 20%; /* Height in proportion to its parent container */
+  margin: auto; /* Auto margin according to the element width */
+  padding: 2rem;
+  border: 0.1rem solid black;
+  border-radius: 1.25rem; /* Optional. Rounds container corners */
+}
+
+.dialog-content h1 {
+  margin-left: 2em;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.btn-group button {
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  .dialog-content {
+    width: 80%;
+  }
+
+  /* Small devices (landscape phones, 564px and up) */
+  @media (min-width: 565px) {
+    .dialog-content {
+      width: 100%;
+    }
+  }
+}

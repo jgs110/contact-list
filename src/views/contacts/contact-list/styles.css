@@ -1,0 +1,124 @@
+.wrapper {
+  margin: 0 auto;
+  flex-flow: row wrap;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid #f7b600;
+  width: 100%;
+  min-height: 5em;
+  overflow-x: hidden;
+}
+
+.visa-logo {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 9em;
+  height: auto;
+  max-width: 100%;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.list {
+  width: auto;
+  list-style: none;
+}
+
+.add-btn {
+  cursor: pointer;
+  background-color: rgb(0, 62, 169);
+  border: none;
+  color: white;
+  margin-top: 2em;
+  padding: 0.9em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.add-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.add-btn:hover {
+  background-color: rgb(50, 108, 208);
+}
+
+.add-btn a:hover {
+  color: white;
+}
+
+.chevron-right {
+  margin-left: 0.8em;
+  color: #f7b600;
+}
+
+/** Loading CSS **/
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.834);
+  z-index: 1;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #f7b600 transparent #f7b600 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Medium and Large devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .list-content {
+    width: 70%;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
