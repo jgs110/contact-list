@@ -14,7 +14,7 @@ root.render(
     <GlobalProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ContactList />} />
+          <Route path="contacts" element={<ContactList />} />
           <Route path="add-contact" element={<AddContact />} />
           <Route path=":contactId" element={<UpdateContact />} />
           <Route

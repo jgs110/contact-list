@@ -27,7 +27,7 @@ const UpdateContact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     editContact(selectedContact);
-    history("/");
+    history("/contacts");
   };
 
   const handleOnChange = (userKey, newValue) =>
@@ -106,7 +106,7 @@ const UpdateContact = () => {
               }}
               aria-label={`Cancel Update Contact for ${selectedContact.firstName} ${selectedContact.lastName}`}
             >
-              <Link to="/" role="button" tabIndex="-1">
+              <Link to="/contacts" role="button" tabIndex="-1">
                 Cancel
               </Link>
             </button>

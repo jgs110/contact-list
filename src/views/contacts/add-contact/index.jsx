@@ -25,7 +25,7 @@ const AddContact = () => {
       email,
     };
     addContact(newContact);
-    history("/");
+    history("/contacts");
   };
 
   return (
@@ -89,12 +89,12 @@ const AddContact = () => {
               type="button"
               onKeyPress={(e) => {
                 if (e.key === "Enter") {
-                  history("/");
+                  history("/contacts");
                 }
               }}
             >
               <Link
-                to="/"
+                to="/contacts"
                 role="button"
                 tabIndex="-1"
                 aria-label={"Cancel Add New Contact"}

@@ -59,7 +59,7 @@ const ContactList = () => {
             <>
               <h1 className="banner-title">CONTACTS</h1>
               <Link
-                to="add-contact"
+                to="/add-contact"
                 role="button"
                 className="add-btn"
                 onKeyPress={(e) => {
